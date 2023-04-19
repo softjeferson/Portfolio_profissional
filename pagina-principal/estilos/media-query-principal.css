@@ -6,12 +6,11 @@
         align-items: center;
         flex-direction: row;
     
-        padding: 60px 0px 0px 90px;
+        padding: 60px 0px 0px 100px;
     }
     main div#perfilImg{
-        width: 99.1vw;
+        width: 99.9vw;
         height: 650px;
-        border: solid 2px var(--cor06);
         background-image: url(../fotos/imagem-do-perfil.jpg);
         background-attachment: scroll;
         background-position: center center;
@@ -29,9 +28,8 @@
         padding: 20px 0px 0px 110px;
     }
     main div#perfilImg{
-        width: 99.1vw;
+        width: 99.9vw;
         height: 600px;
-        border: solid 2px var(--cor06);
         background-image: url(../fotos/imagem-do-perfil.jpg);
         background-attachment: scroll;
         background-position: center center;
@@ -48,9 +46,8 @@
         padding: 70px 0px 0px 130px;
     }
     main div#perfilImg{
-        width: 99.1vw;
+        width: 99.9vw;
         height: 620px;
-        border: solid 2px var(--cor06);
         background-image: url(../fotos/imagem-do-perfil.jpg);
         background-attachment: scroll;
         background-position: center center;

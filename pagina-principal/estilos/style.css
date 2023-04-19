@@ -30,9 +30,8 @@ body,html{
 
 /*topo da paginar*/
 header section#navegação{
-    border: solid 2px var(--cor06);
-    padding: 25px 0px 5px 0px;
-    width: 99.1vw;
+    padding: 25px 0px 10px 0px;
+    width: 99.6vw;
 }
 header section#navegação > h1{
     font-family: var(--fonte02);
@@ -49,7 +48,6 @@ header section#navegação > nav{
     align-items: center;
 }
 header section#navegação > nav > a{
-    padding: 0px 0px 0px 0px;
     font-size: .7em;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;/* aqui modificaçao*/
@@ -71,7 +69,6 @@ header section#navegação > nav > a:hover{
 main div#perfilImg{
     width: 95vw;
     height: 500px;
-    border: solid 2px var(--cor06);
     background-image: url(../fotos/imagem-do-perfil.jpg);
     background-attachment: scroll;
     background-position: center center;
@@ -113,8 +110,13 @@ main section#perfilInfomações1 > nav#redesSocial {
 }
 /*final do perfil 01*/
 
-
-
-
-
-
+main section#trabalhosPortfólio > h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: var(--fonte02);
+}
+main section#trabalhosPortfólio > p{
+    text-align: center;
+    color: #007d96;
+}
