@@ -37,19 +37,20 @@ header section#navegação{
 header section#navegação > h1{
     font-family: var(--fonte02);
     font-size: 1.9em;
-    padding: 17px 0px 0px 10px;
+    padding: 17px 0px 0px 0px;
     text-align: center;
     color: black;
 }
 header section#navegação > nav{
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 header section#navegação > nav > a{
-    padding: 7px 7px 5px 7px;
-    font-size: .9em;
+    padding: 0px 0px 0px 0px;
+    font-size: .7em;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;/* aqui modificaçao*/
     color: var(--cor05);
@@ -59,7 +60,7 @@ header section#navegação > nav > a{
 }
 
 header section#navegação > nav > a:hover{
-    padding: 7px 7px 5px 7px;
+    padding: 0px 0px 0px 0px;
     color: black;
     background-color: var(--cor06);
     border-radius: 20px;
@@ -70,7 +71,7 @@ header section#navegação > nav > a:hover{
 /*perfil 01*/
 main div#perfilImg{
     width: 99.1vw;
-    height: 830px;
+    height: 650px;
     border: solid 2px var(--cor06);
     background-image: url(../fotos/imagem-do-perfil.jpg);
     background-attachment: scroll;
@@ -96,7 +97,7 @@ main section#perfilInfomações1 > h2{
 }
 main section#perfilInfomações1 > p{
     padding: 0px 20px 20px 25px;
-    font-size: 1.2em;
+    font-size: .9em;
     font-family: var(--fonte03);
     text-align: justify;
     text-indent: 40px;
