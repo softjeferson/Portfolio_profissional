@@ -137,7 +137,8 @@ main section#trabalhosPortfólio > p{
 /*primeira section abaixo 01*/
 
 main section#projetoPortfólio01{
-    margin: auto;
+    margin-left: 35px;
+    margin-bottom: 65px;
     background-image: url(../fotos/projeto-login.1v.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -173,3 +174,44 @@ main section#projetoPortfólio01  h1 >  p{
 
 }
 /*primeira section acima 01*/
+
+/*segunda section abaixo 02*/
+
+ main section#projetoPortfólio02{
+    margin-left: 35px;
+    margin-bottom: 35px;
+    background-image: url(../fotos/projeto-cafeteriav1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 290px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
+ }
+
+ main section#projetoPortfólio02 > a {
+    text-decoration: none;
+}
+main section#projetoPortfólio02 a > h1{
+    text-indent: 11px;
+    background-color: rgba(0, 0, 0, 0.329);
+    font-family: var(--fonte02);
+    color: var(--cor03);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
+    font-size: 1.2em;
+    border-radius: 0px 0px 10px 10px;
+
+    transform: translateY(83%);
+
+}
+main section#projetoPortfólio02  h1 >  p{
+    text-indent: 20px;
+    border-radius: 0px 0px 10px 10px;
+    font-family: var(--fonte03);
+    color: var(--cor04);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.747);
+    font-size: .7em;
+    padding-left: 9px;
+
+}
