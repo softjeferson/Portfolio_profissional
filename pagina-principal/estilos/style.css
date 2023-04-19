@@ -25,9 +25,9 @@ body,html{
 
 /*topo da paginar*/
 header section#navegação{
-    border: solid 1px var(--cor06);
+    border: solid 2px var(--cor06);
     padding: 25px 0px 5px 0px;
-    width: 99vw;
+    width: 99.1vw;
 }
 header section#navegação > h1{
     font-size: 1.9em;
@@ -63,9 +63,9 @@ header section#navegação > nav > a:hover{
 
 /*perfil 01*/
 main div#perfilImg{
-    width: 99vw;
+    width: 99.1vw;
     height: 700px;
-    border: solid 1px var(--cor06);
+    border: solid 2px var(--cor06);
     background-image: url(../fotos/imagem-do-perfil.jpg);
     background-attachment: scroll;
     background-position: center center;
