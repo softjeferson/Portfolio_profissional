@@ -137,7 +137,7 @@ main section#trabalhosPortfólio > p{
 /*primeira section abaixo 01*/
 
 main section#projetoPortfólio01{
-    margin-left: 35px;
+    margin-left: 65px;
     margin-bottom: 65px;
     background-image: url(../fotos/projeto-login.1v.jpg);
     background-repeat: no-repeat;
@@ -178,7 +178,7 @@ main section#projetoPortfólio01  h1 >  p{
 /*segunda section abaixo 02*/
 
  main section#projetoPortfólio02{
-    margin-left: 35px;
+    margin-left: 65px;
     margin-bottom: 35px;
     background-image: url(../fotos/projeto-cafeteriav1.jpg);
     background-repeat: no-repeat;
