@@ -110,6 +110,7 @@ main section#perfilInfomações1 > nav#redesSocial {
 }
 /*final do perfil 01*/
 
+/*My works + projetos + sessões*/
 main section#trabalhosPortfólio > h1{
     padding-top: 50px;
     text-align: center;
@@ -119,4 +120,37 @@ main section#trabalhosPortfólio > h1{
 main section#trabalhosPortfólio > p{
     text-align: center;
     color: #007d96;
+    padding-bottom: 80px;
+}
+/*premeira section abaixo*/
+main section#projetoPortfólio01{
+    margin: auto;
+    background-image: url(../fotos/projeto-login.1v.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 290px;
+    height: 250px;
+    border-radius: 10px;
+}
+main section#projetoPortfólio01 > h1{
+    text-indent: 11px;
+    background-color: rgba(0, 0, 0, 0.329);
+    font-family: var(--fonte02);
+    color: var(--cor03);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.685);
+    font-size: 1.2em;
+
+    transform: translateY(864%);
+}
+main section#projetoPortfólio01 > p{
+    text-indent: 10px;
+    background-color: rgba(0, 0, 0, 0.329);
+    font-family: var(--fonte03);
+    color: var(--cor04);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.747);
+    font-size: .7em;
+    padding-left: 5px;
+
+    transform: translateY(500%);
 }
