@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 360px ) and (max-width: 740px ) {
+@media screen and (min-width: 360px ) and (max-width: 658px ) {
     main section#perfilInfomações1 > nav#redesSocial {
         display: inline-flex;
         align-items: center;
         flex-direction: row;
     
         padding: 60px 0px 0px 130px;
+    }
+    main div#perfilImg{
+        width: 99.1vw;
+        height: 700px;
+        border: solid 2px var(--cor06);
+        background-image: url(../fotos/imagem-do-perfil.jpg);
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -16,6 +26,16 @@
         align-items: center;
         flex-direction: row;
     
-        padding: 160px 0px 0px 130px;
+        padding: 20px 0px 0px 130px;
+    }
+    main div#perfilImg{
+        width: 99.1vw;
+        height: 730px;
+        border: solid 2px var(--cor06);
+        background-image: url(../fotos/imagem-do-perfil.jpg);
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
