@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #D9C7A7;
+    --cor02: #BFAC95;
+    --cor03: #1b3338;
+    --cor04: #8C8072;
+    --cor05: #40352C;
+
+    --fonte01:s;
+    --fonte02:s;
+    --fonte03:s;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body,html{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*topo da paginar*/
+header section#navegação{
+    padding: 25px 0px 5px 0px;
+    width: 100vw;
+}
+header section#navegação > h1{
+    font-size: 1.4em;
+    padding: 0px 0px 0px 10px;
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header section#navegação > nav{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+header section#navegação > nav > a{
+    font-size: .9em;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;/* aqui modificaçao*/
+    color: var(--cor05);
+}
+/*topo da paginar*/
+
+/*perfil 01*/
+main div#perfilImg{
+    width: 100vw;
+    height: 200px;
+    background-image: url(../fotos/imagem-do-perfil.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main section#perfilInfomações1 > h1 {
+    color: var(--cor03);
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678);
+    font-size: 1.9em;
+    padding: 60px 0px 0px 20px;
+}
+main section#perfilInfomações1 > h2{
+    font-size: .9em;
+    color: var(--cor02);
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
+    padding: 0px 0px 50px 70px;
+}
+/*perfil 02*/
+main section#perfilInfomações1 > p {
+    display: inline-block;
+    padding-left: 0px;
+    width: 40vw;
+    height: 70px;
+    font-size: .8em;
+    text-align: justify;
+    text-indent: 13px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+
+    transform: translate(140%,-190% );
+}
+main section#perfilInfomações1 > nav#redesSocial {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+
+    transform: translate(-110%, -340%);
+    padding-left: 50px; 
+}
+
+main section#perfilInfomações1 > nav#redesSocial > nav{
+    padding-right: 0%;
+    display: inline;
+}
+
+
+
+
+
+
