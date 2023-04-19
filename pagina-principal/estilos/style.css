@@ -37,7 +37,7 @@ header section#navegação{
 header section#navegação > h1{
     font-family: var(--fonte02);
     font-size: 1.9em;
-    padding: 0px 0px 0px 10px;
+    padding: 17px 0px 0px 10px;
     text-align: center;
     color: black;
 }
