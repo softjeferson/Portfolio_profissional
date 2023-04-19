@@ -116,13 +116,17 @@ main section#trabalhosPortfólio > h1{
     text-align: center;
     font-size: 2.5em;
     font-family: var(--fonte02);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.685);
 }
 main section#trabalhosPortfólio > p{
     text-align: center;
     color: #007d96;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.685);
 }
-/*premeira section abaixo*/
+
+/*primeira section abaixo 01*/
+
 main section#projetoPortfólio01{
     margin: auto;
     background-image: url(../fotos/projeto-login.1v.jpg);
@@ -132,8 +136,12 @@ main section#projetoPortfólio01{
     max-width: 290px;
     height: 250px;
     border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
 }
-main section#projetoPortfólio01 > h1{
+main section#projetoPortfólio01 > a {
+    text-decoration: none;
+}
+main section#projetoPortfólio01 a > h1{
     text-indent: 11px;
     background-color: rgba(0, 0, 0, 0.329);
     font-family: var(--fonte02);
@@ -141,9 +149,9 @@ main section#projetoPortfólio01 > h1{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.685);
     font-size: 1.2em;
 
-    transform: translateY(869%);
+    transform: translateY(854%);
 }
-main section#projetoPortfólio01 > p{
+main section#projetoPortfólio01 a > p{
     text-indent: 10px;
     background-color: rgba(0, 0, 0, 0.329);
     border-radius: 0px 0px 10px 10px;
@@ -153,5 +161,6 @@ main section#projetoPortfólio01 > p{
     font-size: .7em;
     padding-left: 9px;
 
-    transform: translateY(503%);
+    transform: translateY(502%);
 }
+/*primeira section acima 01*/
