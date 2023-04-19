@@ -6,6 +6,7 @@
     --cor03: #1b3338;
     --cor04: #8C8072;
     --cor05: #40352C;
+    --cor06: #007d96;
 
     --fonte01:s;
     --fonte02:s;
@@ -41,18 +42,30 @@ header section#navegação > nav{
     justify-content: space-evenly;
 }
 header section#navegação > nav > a{
-    font-size: 1em;
+    padding: 7px 7px 5px 7px;
+    font-size: .9em;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;/* aqui modificaçao*/
     color: var(--cor05);
+
+    transition: .8s;
+}
+
+header section#navegação > nav > a:hover{
+    padding: 7px 7px 5px 7px;
+    color: black;
+    background-color: var(--cor06);
+    border-radius: 20px;
+    border: solid 3px var(--cor03);
 }
 /*topo da paginar*/
 
 /*perfil 01*/
 main div#perfilImg{
     width: 100vw;
-    height: 350px;
+    height: 480px;
     background-image: url(../fotos/imagem-do-perfil.jpg);
+    background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,8 +97,9 @@ main section#perfilInfomações1 > nav#redesSocial {
     align-items: center;
     flex-direction: row;
 
-    padding: 20px 0px 0px 150px;
+    padding: 60px 0px 0px 110px;
 }
+/*final do perfil 01*/
 
 
 
