@@ -62,7 +62,7 @@ header section#navegação > nav > a{
 header section#navegação > nav > a:hover{
     color: black;
     background-color: var(--cor06);
-    border-radius: 20px;
+    border-radius: 3px;
     border: solid 1px var(--cor03);
 }
 /*topo da paginar*/
