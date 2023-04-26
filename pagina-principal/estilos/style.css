@@ -88,7 +88,8 @@ header div#navegação > nav > a:hover{
 /*perfil01*/
 
 main section#perfil{
-   background-image: url(../fotos/imagem-do-perfil.);/*imagem aqui !!!!!!!!!!*/
+ /*imagem aqui !!!!!!!!!!*/
+  background-color: S;
 }
 
 main section#perfil > h1{
@@ -118,4 +119,41 @@ main section#perfil > p {
     color: var(--cor4);
     font-size: .9em;
     letter-spacing: 1.1px;
+}
+main section div#img01{
+    position: relative;
+    background-image: url(../fotos/foto-perfil-m.png);
+    background-repeat: no-repeat;
+    background-size: 7em;
+    margin-left: 8px;
+    margin-top: 1.7em;
+    height: 250px;
+    width: 250px;
+}
+
+main section#perfil02{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transform: translate(74%, -261%);
+}
+
+main section#perfil02 > h1 {
+    color: var(--cor5);
+    font-family: var(--font2);
+    font-size: 1em;
+}
+main section#perfil02 > h1 > strong#Scor1 {
+    color: darkcyan;
+}
+main section#perfil02 > h1 > strong#Scor2 {
+    color: #d43131;
+}
+main section#perfil02 > ul > p {
+    color: var(--cor5);
+    font-family: var(--font3);
+    font-size: .6em;
+    padding-top: 7px;
 }
