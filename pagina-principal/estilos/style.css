@@ -43,6 +43,7 @@ header > h1 {
     font-family: var(--font3);
     color: var(--cor6);
     font-weight: 100px;
+    letter-spacing: 3px;
 }
 
 header div#menu{
@@ -74,9 +75,13 @@ header div#navegação > nav > a{
     font-family: var(--font3);
     font-weight: bold;
     text-decoration: none;
+    letter-spacing: 2px;
+
+    transition: 1s;
 }
 header div#navegação > nav > a:hover{
     background-color: rgba(192, 186, 186, 0.849);
+    text-decoration: underline overline;
 }
 /*topo da paginar acimar*/
 
@@ -111,5 +116,6 @@ main section#perfil > p {
     text-align: justify;
     font-family: var(--font3);
     color: var(--cor4);
-    font-size: .7em;
+    font-size: .9em;
+    letter-spacing: 1.1px;
 }
