@@ -70,7 +70,7 @@ header div#navegação > nav > a{
     height: 100%;
     font-size: 1.1em;
     padding-bottom: 5px;
-    background-color: var(--cor4);
+    background-color: var(--cor5);
     color: var(--cor6);
     font-family: var(--font3);
     font-weight: bold;
@@ -112,7 +112,8 @@ main section#perfil > h2 > strong#Scor2{
     color: #d43131;
 }
 main section#perfil > p {
-    padding: 0px 20px;
+    padding: 0px 30px;
+    padding-bottom: 20px;
     text-indent: 20px;
     text-align: justify;
     font-family: var(--font3);
