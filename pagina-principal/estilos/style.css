@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display&family=Urbanist&display=swap');
+
+
+:root{
+
+    --cor1:#021F59;
+    --cor2:#011640;
+    --cor3:#061024;
+    --cor4:#E2DEFF;
+    --cor5:#F0EBFF;
+    --cor6:#990606;
+
+    --font1: 'Fjalla One', sans-serif;
+    --font2: 'Playfair Display', serif;
+    --font3: 'Urbanist', sans-serif;
+    --font4: 'arial';
+    
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body,html{
+    background-color: var(--cor3);
+}
+/*topo da paginar */
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header > h1 {
+    position: relative;
+    padding: 30px 0px 20px 20px;
+    font-size: 1.9em;
+    font-family: var(--font3);
+    color: var(--cor6);
+    font-weight: 100px;
+}
+
+header div#menu{
+    color: var(--cor5);
+    position: absolute;
+    text-align: right;
+    font-size: 1.9em;
+
+    transform: translate(900% , 116%);
+}
+
+header div#navegação{
+    display: none;
+}
+header div#navegação > nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header div#navegação > nav > a{
+    position: relative;
+    height: 100%;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+    background-color: var(--cor4);
+    color: var(--cor6);
+    font-family: var(--font3);
+    font-weight: bold;
+    text-decoration: none;
+}
+header div#navegação > nav > a:hover{
+    background-color: rgba(192, 186, 186, 0.849);
+}
+/*topo da paginar acimar*/
+
+/*perfil01*/
+
+main section#perfil{
+   background-image: url(../fotos/imagem-do-perfil.);/*imagem aqui !!!!!!!!!!*/
+}
+
+main section#perfil > h1{
+    color: var(--cor6);
+    font-family: var(--font3);
+    font-size: 1em;
+    padding: 10px 0px 0px 30px;
+}
+main section#perfil > h2{
+    color: var(--cor4);
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 1.8em;
+    padding: 0px 0px 6px 20px;
+}
+main section#perfil > h2 > strong#Scor1{
+    color: darkcyan;
+}
+main section#perfil > h2 > strong#Scor2{
+    color: #d43131;
+}
+main section#perfil > p {
+    padding: 0px 20px;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: var(--font3);
+    color: var(--cor4);
+    font-size: .7em;
+}
