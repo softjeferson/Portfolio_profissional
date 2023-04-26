@@ -17,4 +17,7 @@
     main section#perfil02{
         transform: translate(114%, -261%);
     }
+    main section#mytecnologias div.conteiner{
+        margin-left: 1.5em;
+    }
 }

@@ -177,5 +177,20 @@ main div#tecnologias > h1 > strong{
 main div#tecnologias > p {
     text-align: center;
     color: #d43131;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+}
+
+/* parte das My tecnologias*/
+main section#mytecnologias{
+    display: flex;
+}
+main section#mytecnologias div.conteiner{
+    margin: 0px 10px 8px 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    transform: translatey(-30%);
 }
