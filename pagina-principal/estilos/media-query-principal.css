@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (min-width: 665px) and (max-width: 1023px) {
+@media screen and (min-width: 570px) and (max-width: 1023px) {
     header{
         display: flex;
         flex-direction: row;
@@ -88,4 +88,96 @@
         margin-top: 60px;
     }
 
+}
+@media screen and (min-width: 1024px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header > h1{
+        font-size: 2.1em;
+    }
+    header div#menu{
+        display: none;
+    }
+    header div#navegação{
+        display: block;
+    }
+    header div#navegação > nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    header div#navegação > nav > a{
+        background-color: rgba(255, 255, 255, 0);
+        margin: 40px;
+        padding: 5px;
+    }
+    /*acima header topo da paginar + navegação*/
+
+    main section#perfil > h1{
+        font-size: 1.3em;
+    }
+    main section#perfil > h2{
+        font-size: 3.3em;
+    }
+    main section#perfil > p {
+        font-size: 1.1em;
+    }
+    main section div#img01{
+        background-image: url(../fotos/foto-perfil-m02.png);
+        background-size: 21em;
+        margin: 120px 0px 10px 40px;
+    }
+    main section#perfil02{
+        transform: translate(54%, -91%);
+    }
+    main section#perfil02 > ul > p#textJS{
+        width: 600px;
+    }
+    main section#perfil02 > h1 {
+        font-size: 2.8em;
+    }
+    main section#perfil02 > ul > p {
+        font-size: 1.3em;
+    }
+
+    /*my tecnoligia*/
+    main div#tecnologias > h1 {
+        font-size: 3.8em;
+        margin: auto;
+        margin-top: 290px;
+    }
+    main div#tecnologias > p {
+        font-size: 2em;
+    }
+    main section#mytecnologias div.conteiner{
+        position: relative;
+        margin: auto;
+        width: 250px;
+        height: 250px;
+    }
+    main section#mytecnologias div.conteiner > img{
+        display: none;
+    }
+    main section#mytecnologias div#foto01{
+        background-image: url(../fotos/html5-logo.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 170px;
+    }
+    main section#mytecnologias div#foto02{
+        background-image: url(../fotos/CSS3_logo.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 119px;
+    }
+    main section#mytecnologias div#foto03{
+        background-image: url(../fotos/JavaScript_logo.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 160px;
+    }
 }
