@@ -141,6 +141,7 @@
         transform: translate( 67%, -91%);
     }
     main section#perfil02 > ul > p#textJS{
+        display: block;
         width: 600px;
     }
     main section#perfil02 > h1 {
