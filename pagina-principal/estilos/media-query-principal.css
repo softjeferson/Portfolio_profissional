@@ -21,6 +21,9 @@
     main section#mytecnologias div.conteiner{
         margin-left: 1.5em;
     }
+    main section#perfil02 > ul > p#textJS{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 570px) and (max-width: 1023px) {
@@ -72,6 +75,9 @@
     }
     main section#perfil02{ /*texto da imagem*/
         transform: translate(140%, -198%);
+    }
+    main section#perfil02 > ul > p#textJS{
+        display: none;
     }
     main section#perfil02 > h1 {
         font-size: 2em;
@@ -129,10 +135,10 @@
     main section div#img01{
         background-image: url(../fotos/foto-perfil-m02.png);
         background-size: 21em;
-        margin: 120px 0px 10px 40px;
+        margin: 120px 0px 10px 90px;
     }
     main section#perfil02{
-        transform: translate(54%, -91%);
+        transform: translate( 67%, -91%);
     }
     main section#perfil02 > ul > p#textJS{
         width: 600px;

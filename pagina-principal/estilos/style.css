@@ -148,6 +148,9 @@ main section#perfil02{
 
     transform: translate(84%, -261%);
 }
+main section#perfil02 > ul > p#textJS{
+    display: none;
+}
 
 main section#perfil02 > h1 {
     color: var(--cor5);
