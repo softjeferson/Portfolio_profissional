@@ -17,7 +17,7 @@ function mudouTamanho(){
 
 }
 
-    var mediaQuery = window.matchMedia("(min-width: 768px)");
+    var mediaQuery = window.matchMedia("(min-width: 800px)");
 
     function handleMediaCharge(mediaQuery){
         location.reload();
