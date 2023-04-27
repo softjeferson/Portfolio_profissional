@@ -14,4 +14,12 @@ function mudouTamanho(){
     } else {
         navegação.style.display = 'block'
     }
+
 }
+
+    var mediaQuery = window.matchMedia("(min-width: 768px)");
+
+    function handleMediaCharge(mediaQuery){
+        location.reload();
+    }
+     mediaQuery.addEventListener(handleMediaCharge)
