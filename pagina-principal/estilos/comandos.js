@@ -7,7 +7,7 @@ function clicar(){
 }
 
 function mudouTamanho(){
-    if (window.innerWidth >= 768){
+    if (window.innerWidth >= 665){
         navegação.style.display = 'block'
     } else {
         navegação.style.display = 'none'

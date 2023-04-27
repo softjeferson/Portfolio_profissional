@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 665px) and (max-width: 1023px) {
     header{
         display: flex;
         flex-direction: row;
