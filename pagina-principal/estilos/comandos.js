@@ -17,9 +17,15 @@ function mudouTamanho(){
 
 }
 
-    var mediaQuery = window.matchMedia("(min-width: 800px)");
+     let updatecount = 0
 
-    function handleMediaCharge(mediaQuery){
-        location.reload();
-    }
-     mediaQuery.addEventListener(handleMediaCharge)
+     window,addEventListener('resize' , function(){
+        if (window.innerWidth <= 768){
+            if (updatecount < 1){
+                updatecount++;
+                location.reload();
+            }
+        } else {
+            updatecount = 0
+        }
+     });
