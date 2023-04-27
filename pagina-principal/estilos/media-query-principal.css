@@ -1,5 +1,6 @@
 @charset "UTF-8"; /*medidas inicialdo site 320px tela s9+*/
 
+/*midias de celular*/
 @media screen and (min-width: 365px) and (max-width: 762px ) {
     header > h1 {
         font-size: 2.6em;
@@ -20,4 +21,70 @@
     main section#mytecnologias div.conteiner{
         margin-left: 1.5em;
     }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header div#menu{
+        display: none;
+    }
+    header > h1 {
+        font-size: 2.7em;
+    }
+    header div#navegação > nav {
+        display: flex;
+        flex-direction: row;
+    }
+    header div#navegação > nav > a {
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    header div#navegação > nav > a :hover{
+        border-radius: 10px;
+    }
+    /*acima header*/
+
+    /*abaixo conteudo do perfil*/
+
+    main section#perfil > h1{
+        font-size: 1.3em;
+        text-indent: 10px;
+    }
+    main section#perfil > h2{
+        width: 370px;
+        font-size: 2.4em;
+    }
+    main section#perfil > p {
+        padding-top: 25px;
+    }
+    main section div#img01{ /* teste da foto*/
+        font-size: 1.6em;
+        margin-left: 7em;
+
+        transform: translateY(-10%);
+    }
+    main section#perfil02{ /*texto da imagem*/
+        transform: translate(130%, -198%);
+    }
+    main section#perfil02 > h1 {
+        font-size: 2em;
+    }
+    main section#perfil02 > ul > p {
+        font-size: .8em;
+    }
+    /*minhas tecnologias*/
+    main section#mytecnologias div.conteiner{
+        margin: auto;
+        margin-top: 20px;
+    }
+    main div#tecnologias > h1 {
+        margin-top: 60px;
+    }
+
 }

@@ -39,11 +39,15 @@ header{
 header > h1 {
     position: relative;
     padding: 30px 0px 20px 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.87) ;
     font-size: 1.9em;
     font-family: var(--font3);
     color: var(--cor6);
     font-weight: 100px;
     letter-spacing: 3px;
+}
+header > h1 > strong{
+    color: var(--cor5);
 }
 
 header div#menu{
@@ -97,6 +101,7 @@ main section#perfil > h1{
     font-family: var(--font3);
     font-size: 1em;
     padding: 10px 0px 0px 30px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.87) ;
 }
 main section#perfil > h2{
     color: var(--cor4);
@@ -104,6 +109,7 @@ main section#perfil > h2{
     font-weight: bold;
     font-size: 1.8em;
     padding: 0px 0px 6px 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.87) ;
 }
 main section#perfil > h2 > strong#Scor1{
     color: darkcyan;
@@ -116,6 +122,7 @@ main section#perfil > p {
     padding-bottom: 20px;
     text-indent: 20px;
     text-align: justify;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.87);
     font-family: var(--font3);
     color: var(--cor4);
     font-size: .9em;
@@ -138,6 +145,7 @@ main section#perfil02{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 
     transform: translate(84%, -261%);
 }
@@ -146,6 +154,7 @@ main section#perfil02 > h1 {
     color: var(--cor5);
     font-family: var(--font3);
     font-size: 1em;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.87) ;
 }
 main section#perfil02 > h1 > strong#Scor1 {
     color: darkcyan;
@@ -158,6 +167,7 @@ main section#perfil02 > ul > p {
     font-family: var(--font1);
     font-size: .6em;
     padding-top: 7px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.87) ;
 }
 /*final do perfil01*/
 
@@ -170,6 +180,7 @@ main div#tecnologias > h1 {
     color: var(--cor5);
     font-family: var(--font3);
     text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.87) ;
 }
 main div#tecnologias > h1 > strong{
     color: #d43131;
@@ -185,12 +196,15 @@ main section#mytecnologias{
     display: flex;
 }
 main section#mytecnologias div.conteiner{
+   background-color: #021f596b;
     margin: 0px 10px 8px 10px;
     width: 100px;
     height: 100px;
     display: flex;
     align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.678) ;
     justify-content: space-around;
 
     transform: translatey(-30%);
 }
+/*final das tecnologias*/
