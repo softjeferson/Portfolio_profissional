@@ -64,13 +64,14 @@
         padding-top: 25px;
     }
     main section div#img01{ /* teste da foto*/
+        margin-top: 70px;
         font-size: 1.6em;
-        margin-left: 7em;
+        margin-left: 4em;
 
         transform: translateY(-10%);
     }
     main section#perfil02{ /*texto da imagem*/
-        transform: translate(130%, -198%);
+        transform: translate(140%, -198%);
     }
     main section#perfil02 > h1 {
         font-size: 2em;
