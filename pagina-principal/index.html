@@ -1,64 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script src="https://kit.fontawesome.com/ec64caddaa.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query-principal.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>projetos de header</title>
 </head>
-<body onresize="mudouTamanho()" >
+<body>
     <header>
-        <h1> Sorft<strong>Jeferson</strong> </h1>
-        <div id="menu" class="material-icons" onclick="clicar()">menu</div>
-        <div id="navegação" >
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Portfólio</a>
-                <a href="#">contact</a>
-            </nav>
+        <div class="conteiner">
+            <div class="logo"><img width="200px" src="logo/DOUBTNUT.png"></div>
+                <div class="menu">
+                    <nav>
+                        <a href="#">home</a>
+                        <a href="#">blog</a>
+                        <a href="#">sobre</a>
+                        <a href="#">contato</a>
+                    </nav>
+                </div>
+
+                <button onclick="animar()" id="btn-menu">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                </button>
+
+                <div class="menu-mobile" id="menu-mobile">
+                    <nav>
+                        <a href="#">home</a>
+                        <a href="#">blog</a>
+                        <a href="#">sobre</a>
+                        <a href="#">contato</a>
+                    </nav>
+                </div>
+
+            <div class="sociais">
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-linkedin-in"></i></button>
+                <button><i class="fa-brands fa-twitter"></i></button>
+            </div>
         </div>
     </header>
-    <main>
-        <section id="perfil">
-            <h1>welcome!</h1>
-            <h2> I am web || <strong id="Scor1">Densenvolvedor</strong> || Front-End || <strong id="Scor2">Densenvolvedor soft</strong>||</h2>
-            <p> Ao longo do caminho, estou desenvolvendo minhas habilidades de resolução de problemas, pensamento lógico e criatividade para criar projetos inovadores e funcionais, a fim de oferecer aos meus clientes solução inovadoras e eficazes.</p>
-            <div id="img01"></div>
-        </section>
-        <section id="perfil02">
-            <h1> My <strong id="Scor1">Nome</strong> Is <strong id="Scor2">Jeferson</strong></h1>
-            <ul>
-                <p><p id="textJS">...</p>
-                <p>Nome: Jeferson Alexandre nazario da silva</p>
-                <p>Ago: 19</p>
-                <p>Address: PE-escada</p>
-                <p>Email: jefersonalexandre244@gmail.com</p>
-            </ul>
-        </section >
-        <div id="tecnologias">
-            <h1>My <strong>tecnologias</strong></h1>
-            <p>__________</p>
-        </div>
-        
-        <section id="mytecnologias">
-            <div id="foto01" class="conteiner">
-                <img width="80" src="fotos/html5-logo.png" alt="html5-logo">
-            </div>
-            <div id="foto02" class="conteiner">
-                <img width="60" src="fotos/CSS3_logo.png" alt="CSS3_logo">
-            </div>
-            <div id="foto03" class="conteiner">
-                <img width="69" src="fotos/JavaScript_logo.png" alt="JavaScript_logo">
-            </div>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="estilos/comandos.js"></script>
+    <script src="animação.js"></script>
 </body>
 </html>
