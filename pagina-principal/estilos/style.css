@@ -106,6 +106,7 @@ a{
 
     visibility: hidden; /*ativar depois*/
     transition: 0.6s;
+    overflow: hidden;
 
 }
 
