@@ -430,9 +430,13 @@ footer{
     background-color: rgb(27, 25, 25);
 }
 
+/*container-sessao04*/
+
 footer > section#container-sessao04{
     display: flex;
     flex-wrap: wrap;
+
+    padding-bottom: 60px;
 }
 
 div.conteudo-footer-01{
