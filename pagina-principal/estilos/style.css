@@ -75,6 +75,7 @@ header .container{
 /*main incio*/
 main section#container-sessao01{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
@@ -97,7 +98,7 @@ main section#container-sessao01{
 
 .conteudo-sessao01 > h2{
     color: rgba(255, 255, 255, 0.952);
-    font-size: 5rem;
+    font-size: 6vh;
     font-family: var(--font03);
 }
 
@@ -171,11 +172,12 @@ section#container-sessao02{
 
 div.conteiner-about{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .conteudo-about{
-    width: 600px;
+    width: 500px;
     margin-left: 50px;
 }
 
@@ -196,8 +198,9 @@ div.conteiner-about{
 }
 
 .conteudo-about > p {
+    max-width: 410px;
     color: rgba(255, 255, 255, 0.534);
-    font-size: 0.9rem;
+    font-size: 2vh;
 }
 
 /*nav-list-about*/
@@ -430,13 +433,9 @@ footer{
     background-color: rgb(27, 25, 25);
 }
 
-/*container-sessao04*/
-
 footer > section#container-sessao04{
     display: flex;
     flex-wrap: wrap;
-
-    padding-bottom: 60px;
 }
 
 div.conteudo-footer-01{
@@ -454,16 +453,10 @@ div.conteudo-footer-01{
     letter-spacing: 2px;
     text-shadow: 3px 2px #ff0015a6;
 }
-.conteudo-footer-01 > h2 {
-    position: absolute;
-    color: rgba(255, 255, 255, 0.034);
-    font-size: 2rem;
 
-    transform: translate(-1%, 150%);
-}
 .conteudo-footer-01 input#pesquisarid{
     margin-left: 60px;
-    padding: 10px 140px 10px 20px;
+    padding: 10px 60px 10px 20px;
     background-color: rgba(22, 19, 19, 0.836);
     border: 1px solid #ff001573; 
     border-radius: 5px;
@@ -495,6 +488,7 @@ footer section div.conteudo-footer-02{
 
     margin: auto;
     padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .conteudo-footer-02 > h1{
@@ -508,6 +502,7 @@ footer section div.conteudo-footer-02{
     font-family: var(--font02);
     color: rgba(255, 255, 255, 0.452);
     transition: 0.3s;
+
 }
 .conteudo-footer-02 > a:hover{
     color: rgba(255, 255, 255, 0.925);

@@ -1,0 +1,124 @@
+@charset "UTF_8";
+
+/*midias de dispositivo moveis*/
+/*midias para dispositivos 767px tela*/
+
+@media screen and (max-width: 767px) {
+    header > div.container > div.menu-desktop{
+        display: none;
+    }
+    header > div.container > div.menu-mobile{
+        display: none;
+    }
+    header > div.container:nth-of-type(){
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .logo > h1 {
+        font-size: 5vh;
+    }
+
+    /*buttão mobile*/
+
+    button#btn-menu {
+        width: 100px;
+        border-radius: 10px;
+        border: none;
+        background: transparent;
+        
+        cursor: pointer;
+    } 
+
+    button#btn-menu .linha1{
+        margin: .1rem auto;
+        width: 30px;
+        height: 2px;
+        background-color: #ccc;
+        display: block;
+    
+        position: relative;
+        transform-origin: center;
+    }
+    button#btn-menu .linha2{
+        margin: 9px 10px 8px 35px ;
+        width: 20px;
+        height: 2px;
+        background-color: #ccc;
+        display: block;
+    
+        position: relative;
+        transform-origin: center;
+    }
+    button#btn-menu .linha3{
+        margin-left: 35px;
+        width: 16px;
+        height: 2px;
+        background-color: #ccc;
+        display: block;
+    
+        position: relative;
+        transform-origin: center;
+    }
+
+    header > div.container > div#menu-mobile > nav {
+       display: flex;
+       flex-direction: column;
+
+       margin-top: 20px;
+    }
+
+    #menu-mobile > nav > a{
+        width: 100vw;
+        padding: 10px;
+        text-indent: 20px;
+
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.397);
+        border: .1mm solid rgba(255, 255, 255, 0.062);
+    }
+    /*main incio*/
+    
+    /*main incio*/
+
+    /*conteudo do about*/
+    .conteudo-about{
+        width: 200px;
+        margin-bottom: 40px;
+    }
+    .nav-list-about > ul > div.nav-01 > p{
+        color: rgba(255, 255, 255, 0.534);
+        text-indent: -100px;
+    }
+    .nav-list-about > ul > div.nav-02 > p{
+        color: rgba(255, 255, 255, 0.534);
+        text-indent: -130px;
+    }
+    /*conteudo do about*/
+    /*sessão 02 inicio*/
+    .conteiner-about > div.img-about{
+        box-shadow: 1px 1px 30px #ff0014;
+    }
+    /*sessão 02 inicio*/
+    /*nav-list-about*/
+    .nav-list-about > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 300px;
+        font-size: 1.2vh;
+    }
+    /*nav-list-about*/
+
+    /*conteiner-sessao04*/
+    .conteudo-bloco-01{
+        background-color: rgb(31, 29, 29);
+        border-radius: 20px;
+        width: 300px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+    /*conteiner-sessao04*/
+}

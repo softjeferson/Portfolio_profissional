@@ -7,6 +7,9 @@
     <title>Portfolio 1.0v</title>
    <script src="https://kit.fontawesome.com/ec64caddaa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media_query_mobile.css">
+    <link rel="stylesheet" href="estilos/media_query_tablet.css">
+    <link rel="stylesheet" href="estilos/media_query_desktop.css">
 </head>
 <body>
     <header>
@@ -26,6 +29,26 @@
                     <a href="#">CONTACT</a>
                 </nav>
             </div>
+
+            <button onclick="clica()" id="btn-menu">
+                <span class="linha1"></span>
+                <span class="linha2"></span>
+                <span class="linha3"></span>
+            </button>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">SERVICES</a>
+                    <a href="#">RESUME</a>
+                    <a href="#">PORTFOLIO</a>
+                    <a href="#">PRICING</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">CONTACT</a>
+                </nav>
+            </div>
+
         </div>
     </header>
     <main>
@@ -37,7 +60,7 @@
 
                 <button id="btn-label"> <a href="#">Download CV</a> </button>
             </div>
-            <div id="img-sessao01"><img width="350" src="img/foto01.png"></div>
+            <div id="img-sessao01"><img width="313" src="img/foto01.png"></div>
         </section>
 
         <section id="container-sessao02">
@@ -184,7 +207,6 @@
         <section id="container-sessao04">
            <div class="conteudo-footer-01">
                 <h1>Join WebCorpCo to receive updates, news & events!</h1>
-                <h2>_________________________________</h2>
                 <input type="search" name="pesquisar" id="pesquisarid" placeholder="Enter you Email " width="100">
                 <input id="button-join" type="button" value="Join">
            </div>
