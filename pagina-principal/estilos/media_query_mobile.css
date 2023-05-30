@@ -22,7 +22,7 @@
         display: none;
     }
     header > div.container > div.menu-mobile{
-        display: non;
+        display: none;
     }
     header > div.container:nth-of-type(){
         display: flex;
