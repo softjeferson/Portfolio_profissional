@@ -1,5 +1,18 @@
 @charset "UTF_8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+
+:root{
+--font01: 'Lobster Two', cursive;
+--font02: 'Mukta Malar', sans-serif;
+--font03: 'Anonymous Pro', monospace;
+}
+
 /*midias de dispositivo moveis*/
 /*midias para dispositivos 767px tela*/
 
@@ -31,6 +44,7 @@
         background: transparent;
         
         cursor: pointer;
+
     } 
 
     button#btn-menu .linha1{
@@ -42,6 +56,8 @@
     
         position: relative;
         transform-origin: center;
+
+        transition: 1s;
     }
     button#btn-menu .linha2{
         margin: 9px 10px 8px 55px ;
@@ -52,6 +68,8 @@
     
         position: relative;
         transform-origin: center;
+
+        transition: 0.7s;
     }
     button#btn-menu .linha3{
         margin-left: 55px;
@@ -62,24 +80,26 @@
     
         position: relative;
         transform-origin: center;
-    }
 
+        transition: 1s;
+    }
     header > div.container > div#menu-mobile > nav {
        display: flex;
        flex-direction: column;
 
        margin-top: 20px;
     }
-
     #menu-mobile > nav > a{
         width: 100vw;
         padding: 10px;
         text-indent: 20px;
+        font-family: var(--font03);
 
         text-decoration: none;
         color: rgba(255, 255, 255, 0.397);
         border: .1mm solid rgba(255, 255, 255, 0.062);
     }
+
     /*main incio*/
     .conteudo-sessao01 > h1{
         text-indent: 20px;
@@ -154,6 +174,16 @@
     .conteudo-footer-01 input#button-join{
         margin-top: 40px;
     }
+    footer > section#container-sessao04{
+        flex-direction: column;
+    }
+    footer section div.conteudo-footer-02{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        flex-wrap: nowrap;
+        align-items: center;
+    }
     /*footer-web-site*/
 }
 
@@ -176,7 +206,7 @@
         .conteudo-bloco-01{
             width: 320px;
         }
-    /*conteiner-sessao04*/
+        /*conteiner-sessao04*/
     /*footer-web-site*/
         footer > section#container-sessao04{
             flex-direction: column;
