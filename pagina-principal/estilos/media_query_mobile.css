@@ -3,6 +3,7 @@
 /*midias de dispositivo moveis*/
 /*midias para dispositivos 767px tela*/
 
+/*midias para modelos estilos s20 ultra*/
 @media screen and (max-width: 767px) {
     header > div.container > div.menu-desktop{
         display: none;
@@ -19,6 +20,8 @@
         font-size: 5vh;
     }
 
+
+
     /*buttão mobile*/
 
     button#btn-menu {
@@ -31,7 +34,7 @@
     } 
 
     button#btn-menu .linha1{
-        margin: .1rem auto;
+        margin-left: 55px;
         width: 30px;
         height: 2px;
         background-color: #ccc;
@@ -41,7 +44,7 @@
         transform-origin: center;
     }
     button#btn-menu .linha2{
-        margin: 9px 10px 8px 35px ;
+        margin: 9px 10px 8px 55px ;
         width: 20px;
         height: 2px;
         background-color: #ccc;
@@ -51,7 +54,7 @@
         transform-origin: center;
     }
     button#btn-menu .linha3{
-        margin-left: 35px;
+        margin-left: 55px;
         width: 16px;
         height: 2px;
         background-color: #ccc;
@@ -78,21 +81,39 @@
         border: .1mm solid rgba(255, 255, 255, 0.062);
     }
     /*main incio*/
-    
+    .conteudo-sessao01 > h1{
+        text-indent: 20px;
+        margin-top: 40px;
+    }
+    .conteudo-sessao01 > h2{
+        font-size: 5vh;
+        text-indent: 20px;
+    }
+    .conteudo-sessao01 > p{
+        margin-left: 10px;
+        font-size: 1.8vh;
+    }
+    section .conteudo-sessao01 >button{
+        margin-left: 20px;
+    }
     /*main incio*/
 
     /*conteudo do about*/
     .conteudo-about{
-        width: 200px;
+        text-align: justify;
+        width: 320px;
         margin-bottom: 40px;
+        margin-left: -20px;
     }
     .nav-list-about > ul > div.nav-01 > p{
         color: rgba(255, 255, 255, 0.534);
-        text-indent: -100px;
+        font-size: 2vh;
+        text-indent: -10px;
     }
     .nav-list-about > ul > div.nav-02 > p{
         color: rgba(255, 255, 255, 0.534);
-        text-indent: -130px;
+        font-size: 2vh;
+        text-indent: -40px;
     }
     /*conteudo do about*/
     /*sessão 02 inicio*/
@@ -115,10 +136,92 @@
     .conteudo-bloco-01{
         background-color: rgb(31, 29, 29);
         border-radius: 20px;
-        width: 300px;
+        width: 390px;
         padding: 20px;
         margin-top: 30px;
-        margin-right: 40px;
+        margin-right: 0px;
     }
     /*conteiner-sessao04*/
+
+    /*footer-web-site*/
+    .conteudo-footer-01 > h1{
+        text-align: justify;
+    }
+    .conteudo-footer-01 input#pesquisarid{
+        margin-top: 40px;
+        margin-left: -6%;
+    }
+    .conteudo-footer-01 input#button-join{
+        margin-top: 40px;
+    }
+    /*footer-web-site*/
+}
+
+/*midias de dispositivo moveis*/
+/*midias para dispositivos 360px tela*/
+
+/*midias para modelos pequenos moto G4*/
+
+@media screen and (min-width: 321px) and (max-width: 393px){
+        /*conteudo do about*/
+        .nav-list-about > ul > div.nav-01 > p{
+            margin-left: -16%;
+        }
+        .nav-list-about > ul > div.nav-02 > p{
+            margin-left: -20%;
+        }
+        /*conteudo do about*/
+
+        /*conteiner-sessao04*/
+        .conteudo-bloco-01{
+            width: 320px;
+        }
+    /*conteiner-sessao04*/
+    /*footer-web-site*/
+        footer > section#container-sessao04{
+            flex-direction: column;
+        }
+        footer section div.conteudo-footer-02{
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    /*footer-web-site*/
+}
+
+/*midias de dispositivo moveis*/
+/*midias para dispositivos 320px tela*/
+
+/*midias para modelos pequenos galaxy S9+*/
+
+@media screen and (max-width: 320px){
+    /*conteudo do about*/
+    .nav-list-about > ul > div.nav-01 > p{
+        margin-left: -20%;
+    }
+    .nav-list-about > ul > div.nav-02 > p{
+        margin-left: -24%;
+    }
+    /*conteudo do about*/
+
+    /*conteiner-sessao04*/
+    .conteudo-bloco-01{
+        width: 290px;
+    }
+/*conteiner-sessao04*/
+
+/*footer-web-site*/
+footer > section#container-sessao04{
+    flex-direction: column;
+}
+footer section div.conteudo-footer-02{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/*footer-web-site*/
 }
