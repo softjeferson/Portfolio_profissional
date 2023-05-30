@@ -22,7 +22,7 @@
         display: none;
     }
     header > div.container > div.menu-mobile{
-        display: none;
+        display: non;
     }
     header > div.container:nth-of-type(){
         display: flex;
@@ -100,10 +100,28 @@
         border: .1mm solid rgba(255, 255, 255, 0.062);
     }
 
+    #menu-mobile > nav > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 20px;
+    }
+    #menu-mobile > nav > ul > a {
+        margin-left: 55px;
+    }
+    #menu-mobile > nav > ul > a > img {
+        padding: 8px;
+        border-radius: 10px;
+        box-shadow: 1px 0px 14px rgba(255, 255, 255, 0.315);
+        border: 1px solid rgba(255, 255, 255, 0.486);
+        background-color: rgba(128, 128, 128, 0.11);
+    }
+
     /*main incio*/
     .conteudo-sessao01 > h1{
         text-indent: 20px;
-        margin-top: 40px;
+        margin-top:20px;
     }
     .conteudo-sessao01 > h2{
         font-size: 5vh;
