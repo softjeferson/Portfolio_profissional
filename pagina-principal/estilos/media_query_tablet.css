@@ -1,2 +1,71 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    header > div.container > div.menu-mobile{
+        display: none;
+    }
+    header > div.container > button {
+        display: none;
+    }
+
+    /*header final*/
+    .menu-desktop nav{
+        width: 101.9%;
+        margin-top: 40px;
+        margin-left: -9px;
+        border: 1px solid rgba(255, 255, 255, 0.342);
+        padding: 20px;
+    }
+    /*header final*/
+
+    /*main incio*/
+    .conteudo-sessao01 > h1{
+        text-indent: 30px;
+    }
+    .conteudo-sessao01 > h2{
+        font-size: 4.4rem;
+        text-indent: 10px;
+    }
+    .conteudo-sessao01 > p{
+        margin-left: 20px;
+        text-align: justify;
+    }
+    section .conteudo-sessao01 >button{
+       margin-left: 20px;
+    }
+    /*main incio*/
+
+    /*conteudo do about*/
+    .conteudo-about{
+        width: 600px;
+    }
+    .conteudo-about > p{
+        width: 600px;
+        font-size: 1rem;
+        text-align: justify;
+        text-indent: 30px;
+    }
+    /*conteudo do about*/
+
+    /*nav-list-about*/
+    .nav-list-about > ul{
+        width: 300px;
+        margin-bottom: 70px;
+    }
+    .nav-list-about > ul > div.nav-02 > p{
+        text-indent: 0px;
+    }
+    /*nav-list-about*/
+
+    /*conteiner-sessao04*/
+    .conteiner-resume-sessao04{
+        width: 600px;
+    }
+    /*conteiner-sessao04*/
+
+    /*footer-web-site*/
+    .conteudo-footer-01 > h1{
+        margin-bottom: 40px;
+    }
+    /*footer-web-site*/
+}
