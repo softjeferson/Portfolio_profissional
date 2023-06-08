@@ -1,275 +1,230 @@
-@charset "UTF_8";
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
-
-
-:root{
---font01: 'Lobster Two', cursive;
---font02: 'Mukta Malar', sans-serif;
---font03: 'Anonymous Pro', monospace;
-}
-
-/*midias de dispositivo moveis*/
-/*midias para dispositivos 767px tela*/
+@charset "UTF-8";
 
 /*midias para modelos estilos s20 ultra*/
 @media screen and (max-width: 767px) {
-    header > div.container > div.menu-desktop{
+    header > div.container div.navegacao{
         display: none;
     }
-    header > div.container > div.menu-mobile{
+    header > div.container  div#navegacao-mobile{
         display: none;
     }
-    header > div.container:nth-of-type(){
-        display: flex;
-        flex-wrap: nowrap;
-    }
 
-    .logo > h1 {
-        font-size: 5vh;
-    }
+        /*buttão mobile*/
 
-
-
-    /*buttão mobile*/
-
-    button#btn-menu {
-        width: 100px;
-        border-radius: 10px;
-        border: none;
-        background: transparent;
+        button#btn-menu {
+            width: 100px;
+            border-radius: 10px;
+            border: none;
+            background: transparent;
+            
+            cursor: pointer;
+        } 
+    
+        button#btn-menu .linha1{
+            margin-left: 55px;
+            width: 30px;
+            height: 2px;
+            background-color: #020202;
+            display: block;
         
-        cursor: pointer;
-
-    } 
-
-    button#btn-menu .linha1{
-        margin-left: 55px;
-        width: 30px;
-        height: 2px;
-        background-color: #ccc;
-        display: block;
+            position: relative;
+            transform-origin: center;
     
-        position: relative;
-        transform-origin: center;
-
-        transition: 1s;
-    }
-    button#btn-menu .linha2{
-        margin: 9px 10px 8px 55px ;
-        width: 20px;
-        height: 2px;
-        background-color: #ccc;
-        display: block;
+            transition: 1s;
+        }
+        button#btn-menu .linha2{
+            margin: 9px 10px 8px 55px ;
+            width: 20px;
+            height: 2px;
+            background-color: #000000;
+            display: block;
+        
+            position: relative;
+            transform-origin: center;
     
-        position: relative;
-        transform-origin: center;
-
-        transition: 0.7s;
-    }
-    button#btn-menu .linha3{
-        margin-left: 55px;
-        width: 16px;
-        height: 2px;
-        background-color: #ccc;
-        display: block;
+            transition: 0.7s;
+        }
+        button#btn-menu .linha3{
+            margin-left: 55px;
+            width: 16px;
+            height: 2px;
+            background-color: #0f0f0f;
+            display: block;
+        
+            position: relative;
+            transform-origin: center;
     
-        position: relative;
-        transform-origin: center;
+            transition: 1s;
+        }
+        /*buttão mobile*/
 
-        transition: 1s;
-    }
-    header > div.container > div#menu-mobile > nav {
-       display: flex;
-       flex-direction: column;
+        /*section tabela das ultimas vagas*/
+        section.container-tabela , section.container-tabela2 , section.container-tabela3{
+            height: 150px;
+            gap: 20px;
+        }
+        /*section tabela das ultimas vagas*/
 
-       margin-top: 20px;
-    }
-    #menu-mobile > nav > a{
-        width: 100vw;
-        padding: 10px;
-        text-indent: 20px;
-        font-family: var(--font03);
+        /*section conteudo pesquisar*/
+        section.container{
+            height: 820px;
+        }
+        section > div.container-conteudo01{
+            margin-top: 100px;
+        }
+         /*section conteudo pesquisar*/
 
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.397);
-        border: .1mm solid rgba(255, 255, 255, 0.062);
-    }
+        /*section de enviar vagas */
+        section.container-enviar-vaga{
+            height: 700px;
+            background-position: center center;
+            background-attachment: local;
+            background-attachment: fixed;
+        }
+        section.container-enviar-vaga > div.conteudo-enviar-vaga > h1{
+            font-size: 3rem;
+            width: 330px;
+            margin-top: 90px;
+            margin-left: 40px;
+        } section.container-enviar-vaga > div.conteudo-enviar-vaga > p {
+            width: 300px;
+            margin: 30px 1px 30px 40px ;
+        } section.container-enviar-vaga > div.btn-enviar{
+            margin-left: 40px;
+        }
+        /*section de enviar vagas */
 
-    #menu-mobile > nav > ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: nowrap;
-        padding: 20px;
-    }
-    #menu-mobile > nav > ul > a {
-        margin-left: 55px;
-    }
-    #menu-mobile > nav > ul > a > img {
-        padding: 8px;
-        border-radius: 10px;
-        box-shadow: 1px 0px 14px rgba(255, 255, 255, 0.315);
-        border: 1px solid rgba(255, 255, 255, 0.486);
-        background-color: rgba(128, 128, 128, 0.11);
-    }
+        /*section jobfinder*/
+        section.jobfinder{
+                margin-top: 50px;
+                width: 360px;
+        }
+        /*section jobfinder*/
 
-    /*main incio*/
-    .conteudo-sessao01 > h1{
-        text-indent: 20px;
-        margin-top:20px;
-    }
-    .conteudo-sessao01 > h2{
-        font-size: 5vh;
-        text-indent: 20px;
-    }
-    .conteudo-sessao01 > p{
-        margin-left: 10px;
-        font-size: 1.8vh;
-    }
-    section .conteudo-sessao01 >button{
-        margin-left: 20px;
-    }
-    /*main incio*/
+        /*section blog-divisão*/
+        body > div.divisao-blog{
+            width: 300px;
+            height: 300px;
+        }
+        /*section blog-divisão*/
 
-    /*conteudo do about*/
-    .conteudo-about{
-        text-align: justify;
-        width: 320px;
-        margin-bottom: 40px;
-        margin-left: -20px;
-    }
-    .nav-list-about > ul > div.nav-01 > p{
-        color: rgba(255, 255, 255, 0.534);
-        font-size: 2vh;
-        text-indent: -10px;
-    }
-    .nav-list-about > ul > div.nav-02 > p{
-        color: rgba(255, 255, 255, 0.534);
-        font-size: 2vh;
-        text-indent: -40px;
-    }
-    /*conteudo do about*/
-    /*sessão 02 inicio*/
-    .conteiner-about > div.img-about{
-        box-shadow: 1px 1px 30px #ff0014;
-    }
-    /*sessão 02 inicio*/
-    /*nav-list-about*/
-    .nav-list-about > ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 300px;
-        font-size: 1.2vh;
-    }
-    /*nav-list-about*/
-
-    /*conteiner-sessao04*/
-    .conteudo-bloco-01{
-        background-color: rgb(31, 29, 29);
-        border-radius: 20px;
-        width: 390px;
-        padding: 20px;
-        margin-top: 30px;
-        margin-right: 0px;
-    }
-    /*conteiner-sessao04*/
-
-    /*footer-web-site*/
-    .conteudo-footer-01 > h1{
-        text-align: justify;
-    }
-    .conteudo-footer-01 input#pesquisarid{
-        margin-top: 40px;
-        margin-left: -6%;
-    }
-    .conteudo-footer-01 input#button-join{
-        margin-top: 40px;
-    }
-    footer > section#container-sessao04{
-        flex-direction: column;
-    }
-    footer section div.conteudo-footer-02{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    /*footer-web-site*/
+        /*section footer*/
+        section.container-footer{
+            gap: 30px;
+        }
+        section.container-footer > #footer03{
+            margin-left: -20px;
+        }
+        /*section footer*/
 }
-
-/*midias de dispositivo moveis*/
-/*midias para dispositivos 360px tela*/
 
 /*midias para modelos pequenos moto G4*/
-
 @media screen and (min-width: 321px) and (max-width: 393px){
-        /*conteudo do about*/
-        .nav-list-about > ul > div.nav-01 > p{
-            margin-left: -16%;
-        }
-        .nav-list-about > ul > div.nav-02 > p{
-            margin-left: -20%;
-        }
-        /*conteudo do about*/
 
-        /*conteiner-sessao04*/
-        .conteudo-bloco-01{
-            width: 320px;
-        }
-        /*conteiner-sessao04*/
-    /*footer-web-site*/
-        footer > section#container-sessao04{
-            flex-direction: column;
-        }
-        footer section div.conteudo-footer-02{
-            padding-top: 10px;
-            padding-bottom: 10px;
+    /*section tabela das ultimas vagas*/
+    section.container-tabela3{
+        height: 250px;
+        padding: 10px;
+    }
+    /*section tabela das ultimas vagas*/
 
-            flex-wrap: nowrap;
-            align-items: center;
-        }
-    /*footer-web-site*/
+    /*section de enviar vagas */
+    section.container-enviar-vaga{
+        height: 790px;
+    }
+    section.container-enviar-vaga > div.conteudo-enviar-vaga > h1{
+        width: 320px;
+    }
+    /*section de enviar vagas */
 }
-
-/*midias de dispositivo moveis*/
-/*midias para dispositivos 320px tela*/
 
 /*midias para modelos pequenos galaxy S9+*/
-
 @media screen and (max-width: 320px){
-    /*conteudo do about*/
-    .nav-list-about > ul > div.nav-01 > p{
-        margin-left: -20%;
-    }
-    .nav-list-about > ul > div.nav-02 > p{
-        margin-left: -24%;
-    }
-    /*conteudo do about*/
 
-    /*conteiner-sessao04*/
-    .conteudo-bloco-01{
-        width: 290px;
+     /*section conteudo pesquisar*/
+    section.container{
+        height: 950px;
     }
-/*conteiner-sessao04*/
+     /*section conteudo pesquisar*/
 
-/*footer-web-site*/
-footer > section#container-sessao04{
-    flex-direction: column;
-}
-footer section div.conteudo-footer-02{
-    padding-top: 10px;
-    padding-bottom: 10px;
+     /*section tabela das ultimas vagas*/
+     section.container-tabela , section.container-tabela2 , section.container-tabela3{
+        height: auto;
+        gap: 1px;
+    }
+    section.container-tabela2{
+        gap: 4px;
+    }
+    section.container-tabela > h4 {
+        padding: 1px 100px;
+        gap: 100px;
+        margin: 10px;
+    }
+    section.container-tabela2 > h4 {
+        padding: 1px 100px;
+        gap: 100px;
+        margin: 10px;
+    }
+    section.container-tabela3 > h4 {
+        padding: 1px 50px;
+        margin: 10px;
+    }
+    section.container-tabela4 > h4 {
+        padding: 1px 100px;
+        gap: 100px;
+        margin: 10px;
+    }
+    /*section tabela das ultimas vagas*/
 
-    flex-wrap: nowrap;
-    align-items: center;
-}
-/*footer-web-site*/
+    /*section de enviar vagas */
+    section.container-enviar-vaga{
+        height: 780px;
+    }
+    section.container-enviar-vaga > div.conteudo-enviar-vaga > h1{
+        font-size: 2.9rem;
+        width: 250px;
+        margin-top: 80px;
+        margin-left: 40px;
+    } section.container-enviar-vaga > div.conteudo-enviar-vaga > p {
+        width: 240px;
+        margin: 30px 1px 30px 40px ;
+        font-size: 1.2rem;
+    } section.container-enviar-vaga > div.btn-enviar{
+        margin-left: 40px;
+    }
+    /*section de enviar vagas */
+
+    /*section jobfinder*/
+    section.jobfinder{
+        margin-top: 50px;
+        width: 200px;
+    }
+    section.jobfinder > div.jobfinder-container > div.jobfinder01 > h1{
+        margin-top: 20px;
+    }
+    /*section jobfinder*/
+
+    /*section conteudo dos candidatos as vagas*/
+    section.container-candidatos > div.candidatos-container > div.conteudo-candidatos > h1{
+        margin-left: -20px;
+    }
+    /*section conteudo dos candidatos as vagas*/
+
+    /*section blog-artigos*/
+    section.container-blog > .conteudo-blog{
+        width: 270px;
+    }
+    section.container-blog > .conteudo-blog > p{
+        width: 270px;
+    }
+    /*section blog-artigos*/
+
+    /*section footer*/
+    section.container-footer > .footer-jobfinder{
+        width: 200px;
+    }
+    section.container-footer > #footer03{
+        width: 180px;
+    }
+    /*section footer*/
 }

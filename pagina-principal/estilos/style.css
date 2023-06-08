@@ -1,509 +1,547 @@
 @charset "UTF-8";
 
-
-
-    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
-
-    @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
-
-    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
-
-
-:root{
-    --font01: 'Lobster Two', cursive;
-    --font02: 'Mukta Malar', sans-serif;
-    --font03: 'Anonymous Pro', monospace;
-}
-
-
-
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 
-header, html{
-    background-color: rgb(19, 17, 17);
+@media screen and (min-width: 1024px){
+   header > div.container  div#navegacao-mobile{
+    display: none;
+   }
+
+   header > div.conatiner button {
+    display: none;
+   }
 }
 
-header .container{
-    background-color: black;
-    max-width: 100%;
+/*hedaer conteudo top*/
+header div.container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 20px 10px;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
 }
-
-.logo{
-    font-family:var(--font01); /*colocar font*/
-}
-.logo > h1 {
+div.logo a > img {
+    width: 70px;
+    margin-left: 30px;
     cursor: pointer;
-    color: white;
-    font-size: 2.7rem;
 }
-
-.logo > h1 > strong {
-    color: #ff0024;
+div.navegacao nav {
+    margin-right: 20px;
 }
-
-.menu-desktop a{
+div.navegacao nav > a {
     text-decoration: none;
-    color: white;
-    font-family: var(--font02); /*colocar font*/
-    font-size: 0.9rem;
-    padding: 10px;
-
-    transition: 1s;
+    color: rgb(102, 101, 101);
+    font-size: 1.3rem;
+    padding: 13px;
+    transition: .5s;
+    margin-right: 9px;
+}
+div.navegacao nav > a:hover{
+    color: rgb(69, 177, 245);
 }
 
-.menu-desktop a:not(:last-child){
-    margin-right: 18px;
-}
+/*hedaer conteudo top*/
 
-.menu-desktop a:hover{
-    color: #ff0014;
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.144);
-}
-
-/*header final*/
-
-/*main incio*/
-main section#container-sessao01{
+/*section conteudo pesquisar*/
+section.container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 
-    background-color: black;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/pexels-fauxels-3183132.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    background-attachment: fixed;
 }
-
-.conteudo-sessao01{
+section > div.container-conteudo01{
     display: flex;
     flex-direction: column;
-
-    width: 450px;
-    height: auto;
-}
-
-.conteudo-sessao01 > h1{
-    color: rgba(255, 255, 255, 0.658);
-    font-size: 1.7rem;
-    font-family: var(--font02);
-}
-
-.conteudo-sessao01 > h2{
-    color: rgba(255, 255, 255, 0.952);
-    font-size: 13vh;
-    font-family: var(--font03);
-}
-
-.conteudo-sessao01 > p{
-    color: rgba(255, 255, 255, 0.534);
-    font-size: 0.8rem;
-    font-family: var(--font02);
-    text-indent: 20px;
-    margin-top: 20px;
-}
-
-section .conteudo-sessao01 >button{
-    width: 130px;
-    padding: 10px;
-    margin-top: 30px;
-    background: none;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-
-    transition: 0.5s;
-}
-
-section .conteudo-sessao01 >button:hover{
-    border: 2px solid red;
-    box-shadow: 1px 1px 15px red;
-}
-
-section .conteudo-sessao01 >button>a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.616);
-}
-
-section div#img-sessao01{
-    transform: translateY(0.8%);
-}
-
-/*sessão 01 final*/
-
-/*sessão 02 inicio*/
-
-section#container-sessao02{
-    background-color: rgb(19, 17, 17);
-}
-
-.ABOUT{
-    text-align: center;
-    margin: 70px 70px;
-}
-
-.ABOUT > h1 {
-    color: #ff0025;
-    font-size: 2.4rem;
-    font-family: var(--font01);
-}
-
-.ABOUT > p {
-    color: rgba(255, 255, 255, 0.301);
-    font-size: 1rem;
-    font-family: var(--font02);
-    margin-top: 10px;
-}
-
-.ABOUT > h2{
-    color: #ff0014;
-    font-size: 4rem;
-    margin-top: -20px;
-}
-
-/*conteudo do about*/
-
-div.conteiner-about{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.conteudo-about{
-    width: 500px;
-    margin-left: 50px;
-}
-
-.conteiner-about > div.img-about{
-    box-shadow: 1px 1px 30px #ff0014;
-    margin-bottom: 70px;
-}
-
-.conteudo-about > h1 {
-    color: white;
-    font-family: var(--font01);
-}
-
-.conteudo-about > h2 {
-    color: #ff0026;
-    margin-top: -5px;
-    margin-bottom: 20px;
-}
-
-.conteudo-about > p {
-    max-width: 410px;
-    color: rgba(255, 255, 255, 0.534);
-    font-size: 2vh;
-}
-
-/*nav-list-about*/
-
-div.conteudo-about > nav.nav-list-about{
-   margin-top: 40px;
-}
-
-.nav-list-about > ul{
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    width: 600px;
+    margin-top: 230px;
+    background-color: rgba(252, 152, 21, 0.596);
+    max-width: 1300px;
+    border-radius: 20px;
+    padding: 20px;
 }
-
-.nav-list-about > ul > div.nav-01 > p{
-    color: rgba(255, 255, 255, 0.534);
+section > div.container-conteudo01> h1{
+    color: rgba(255, 255, 255, 0.966);
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
 }
-.nav-list-about > ul > div.nav-01 > p > strong{
-    color: rgba(255, 255, 255, 0.76);
+section > div.container-conteudo01> p{
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.836);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
-.nav-list-about > ul > div.nav-02 > p{
-    color: rgba(255, 255, 255, 0.534);
-    text-indent: 40px;
+/*section conteudo pesquisar*/
+/*section div pesquisar-categoria*/
+section div.pesquisar-categoria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
-.nav-list-about > ul > div.nav-02 > p > strong{
-    color: rgba(255, 255, 255, 0.76);
+input.box-pesquisar{
+    padding: 10px;
+    border: none;
 }
-
-/*conteiner sessão 03 inicio*/
-
-main > div.conteudo-top-sessao03{
-    text-align: center;
-    background-color: rgb(27, 24, 24);
-    padding-top: 80px;
-}
-
-.conteudo-top-sessao03 > h1 {
-    color: #ff0025;
-    font-size: 2.4rem;
-    font-family: var(--font01);
-}.conteudo-top-sessao03 > p {
-    color: rgba(255, 255, 255, 0.301);
+input#btn-pesquisar{
+    padding: 5px 40px;
     font-size: 1rem;
-    font-family: var(--font02);
-    margin-top: 10px;
-}.conteudo-top-sessao03 > h2{
-    color: #ff0014;
-    font-size: 4rem;
-    margin-top: -25px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.658);
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+input#btn-pesquisar:hover{
+   color: white;
+   box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
-/*conteudo da sessao 03*/
+/*section ultimas vagas*/
 
-section#container-sessao03{
+section.container-sessao02 {
+    margin-top: 90px;
+}
+ body div.vagas > h1 {
+    text-align: center;
+    color: rgb(61, 61, 61);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+/*section tabela das ultimas vagas*/
+
+section.container-tabela {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
 
-    background-color: rgb(27, 24, 24);
-    padding-top: 50px;
-}
+    border: 1px solid rgba(128, 128, 128, 0.644);
+    border-radius: 10px 10px 0px 0px;
+} 
+section.container-tabela2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
 
-.conteudo-services-01{
-    cursor: pointer;
-    width: 350px;
-    text-align: center;
-    background-color: rgb(39, 35, 35);
-    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.644);
+} 
+section.container-tabela3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+    border: 1px solid rgba(128, 128, 128, 0.644);
+    border-radius: 0px 0px 10px 10px;
     margin-bottom: 60px;
-
-    transition: 0.5s;
 }
-.conteudo-services-01:hover{
-    box-shadow: 1px 1px 40px red;
-}
-
-.conteudo-services-01 > i {
-    font-size: 3rem;
-    color: #ff0015cc;
-    margin: 30px;
-}
-.conteudo-services-01 > h1{
-    color: white;
-    font-family: var(--font02);
-}
-.conteudo-services-01 > p{
-    color: rgba(255, 255, 255, 0.384);
-    font-family: var(--font02);
-    font-size: 0.9rem;
-    margin: 10px;
-}
-
-/*conteudo-top-sessao 04*/
-
-main div.conteudo-top-sessao04{
-    text-align: center;
-    padding-top: 50px;
-
-    background-color: rgb(19, 17, 17);
-}
-.conteudo-top-sessao04 > h1 {
-    color: #ff0025;
-    font-size: 2.4rem;
-    font-family: var(--font01);
-}.conteudo-top-sessao04 > p {
-    color: rgba(255, 255, 255, 0.301);
-    font-size: 1rem;
-    font-family: var(--font02);
-    margin-top: 10px;
-}.conteudo-top-sessao04 > h2{
-    color: #ff0014;
-    font-size: 4rem;
-    margin-top: -25px;
-}
-
-/*conteiner-sessao04*/
-
-main section#conteiner-sessao04{
+section.container-tabela4 {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-.conteiner-resume-sessao04{
-    display: flex;
     align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+    border: 1px solid rgba(128, 128, 128, 0.644);
 }
 
-.conteudo-01{
-    margin-top: 60px;
+section.container-tabela > h3 {
+    color: rgba(43, 43, 43, 0.712);
 }
-.conteudo-01 > h1{
-    background-color: #ff1226d0;
-    border-radius: 2px;
-    color: rgba(255, 255, 255, 0.774);
-    font-size: 1rem;
-    font-family: var(--font02);
-    letter-spacing: 1px;
-    width: 140px;
-    padding: 5px 5px 5px 10px;
-}
-
-.conteudo-bloco-01{
-    background-color: rgb(31, 29, 29);
+section.container-tabela > h4 {
+    padding: 1px 130px;
+    background-color: blueviolet;
+    color: white;
     border-radius: 20px;
-    width: 500px;
-    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.container-tabela2 > h3 {
+    color: rgba(43, 43, 43, 0.712);
+}
+section.container-tabela2 > h4 {
+    padding: 1px 130px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.container-tabela3 > h3 {
+    color: rgba(43, 43, 43, 0.712);
+}
+section.container-tabela3 > h4 {
+    padding: 1px 100px;
+    background-color: rgb(255, 91, 62);
+    color: white;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.container-tabela4 > h3 {
+    color: rgba(43, 43, 43, 0.712);
+}
+section.container-tabela4 > h4 {
+    padding: 1px 130px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*section tabela das ultimas vagas*/
+
+.tipo-vagas > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.1rem;
+}
+.tipo-vagas > strong > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    font-weight: 550;
+}
+/*section tabela das ultimas vagas*/
+
+div.vagas-ver-mais {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   margin-top: -30px;
+   margin-bottom: 3rem;
+}
+div.vagas-ver-mais > h1 {
+   padding: 9px;
+   font-size: 1.4rem;
+   color: rgb(15, 151, 235);
+   border-radius: 5px;
+   border: 2px solid rgb(15, 151, 235);
+   transition: .5s;
+}
+div.vagas-ver-mais > h1:hover {
+    cursor: pointer;
+    background-color: rgb(15, 151, 235);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(15, 151, 235, 0.486) ;
+}
+
+/*section de enviar vagas */
+
+section.container-enviar-vaga{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/pexels-rdne-stock-project-6517197.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.container-enviar-vaga > div.conteudo-enviar-vaga{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+}
+section.container-enviar-vaga > div.conteudo-enviar-vaga > h1 {
+    width: 700px;
+    margin-top: 200px;
+    margin-left: 80px;
+
+    font-size: 3.6rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.616);
+}section.container-enviar-vaga > div.conteudo-enviar-vaga > p {
+    width: 600px;
+    margin: 30px 1px 30px 80px ;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.637);
+}
+section.container-enviar-vaga > div.btn-enviar{
+    width: 190px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.527);
+    margin: 10px 1px 20px 80px;
+    border-radius: 10px;
+    transition: .5s;
+}
+section.container-enviar-vaga > div.btn-enviar:hover{
+    background-color: white;
+    color: rgba(219, 117, 34, 0.685);
+    box-shadow: 0px 0px 20px  rgba(236, 122, 28, 0.171);
+}
+
+section.container-enviar-vaga > div.btn-enviar > h1 {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*section jobfinder*/
+
+section.jobfinder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 900px;
+}
+
+section.jobfinder > h1 {
+    font-size: 2.5rem;
+    color: rgb(75, 74, 74);
+}
+section.jobfinder > p {
     margin-top: 30px;
-    margin-right: 40px;
+    color: rgba(61, 61, 61, 0.795);
+    font-size: 1.1rem;
 }
 
-.conteudo-bloco-01 > h1{
-    color: #ff1226d0;
-    font-family: var(--font03);
-}
-.conteudo-bloco-01 > h2 {
-    color: rgba(255, 255, 255, 0.74);
-    padding-top: 20px;
-    font-family: var(--font02);
-}
-.conteudo-bloco-01 > p {
-    color: rgba(255, 255, 255, 0.404);
-    font-family: var(--font02);
-    text-align: justify;
-}
-
-/*conteudo do nav css*/
-
-div.conteudo-01 > div.conteudo-bloco-02 > ul {
+section.jobfinder > div.jobfinder-container { 
+    margin: 70px 50px 100px 50px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-direction: column;
-
-    width: 300px;
-    height: 230px;
-    padding: 20px;
 }
-
-div.conteudo-01 > div.conteudo-bloco-02 > ul > h1{
-    color: rgba(255, 255, 255, 0.685);
+section.jobfinder > div.jobfinder-container > div.jobfinder01 > h1 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.651);
+}
+section.jobfinder > div.jobfinder-container > div.jobfinder01 > p{
     font-size: 1.2rem;
-    font-family: var(--font03);
-    padding-top: 10px;
-}
-div.conteudo-01 > div.conteudo-bloco-02 > ul > p {
-    color: #ff0014;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-div.conteudo-01 > div.conteudo-bloco-02 > ul > p:hover{
-    color: yellow ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.685);
 }
 
-/*contedudo da fun facts*/
+/*section conteudo dos candidatos as vagas*/
 
-div.conteudo-01 > div.conteudo-bloco-03{
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   flex-direction: row;
-
-   background-color: rgb(31, 29, 29);
-   margin-top: 10px;
-
-   width: 300px;
-   height: 50px;
-   padding: 10px;
-   border-radius: 3px;
+section.container-candidatos{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right, rgba(9, 102, 223, 0.664) , rgba(9, 102, 223, 0.685)), url(../img/pexels-fauxels-3183183.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 150px;
 }
-div.conteudo-01 > div.conteudo-bloco-03> h1{
-    color: rgba(255, 255, 255, 0.76);
-    text-align: justify;
-}
-div.conteudo-01 > div.conteudo-bloco-03> p{
-    color: rgba(255, 255, 255, 0.404);
-}
-
-/*footer-web-site*/
-
-footer{
-    margin-top: 70px;
-    padding-top: 50px;
-    background-color: rgb(27, 25, 25);
-}
-
-footer > section#container-sessao04{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-div.conteudo-footer-01{
+section.container-candidatos > div.candidatos-container{
+    width: 80%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-
-    padding: 40px;
-    width: 100%;
+    margin: auto;
 }
-.conteudo-footer-01 > h1{
-    color: rgba(255, 255, 255, 0.836);
-    font-family: var(--font01);
-    letter-spacing: 2px;
-    text-shadow: 3px 2px #ff0015a6;
+section.container-candidatos > div.candidatos-container > div.conteudo-candidatos > h1 {
+    margin: 160px 1px 40px 1px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.966);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
 }
-
-.conteudo-footer-01 input#pesquisarid{
-    margin-left: 60px;
-    padding: 10px 60px 10px 20px;
-    background-color: rgba(22, 19, 19, 0.836);
-    border: 1px solid #ff001573; 
-    border-radius: 5px;
+section.container-candidatos > div.candidatos-container > div.conteudo-candidatos > p{
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    width: auto;
+    margin-bottom: 40px;
 }
 
-.conteudo-footer-01 input#button-join{
-    padding: 6px 20px;
-    margin-left: 20px;
+/*section comentarios de candidatos as vagas*/
 
-    color: rgba(255, 255, 255, 0.849);
-    font-family: var(--font01);
-    font-size: 1.2rem;
-    cursor: pointer;
-
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: #ff0022cb;
-
-}
-.conteudo-footer-01 input#button-join:hover{
-    border: 1px solid rgb(255, 255, 255);
-}
-
-footer section div.conteudo-footer-02{
+section.container-candidatos > .container-comentarios{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+section.container-candidatos > .container-comentarios > .cometarios-candidatos{
+   background-color: white;
+   padding: 25px;
+   border-radius: 20px;
+   width: 200px;
+}
+/*section comentarios de candidatos as vagas*/
+
+/*section blog-divisão*/
+body > div.divisao-blog{
+    width: 800px;
+    height: 160px;
+    display: flex;
     flex-direction: column;
-    align-items: start;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
 
-    margin: auto;
+body > div.divisao-blog > h1 {
+    font-size: 2.8rem;
+    color: rgb(75, 74, 74);
+}
+body > div.divisao-blog > p {
+    margin-top: 20px;
+    color: rgba(61, 61, 61, 0.911);
+    font-size: 1.3rem;
+}
+/*section blog-divisão*/
+
+/*section blog-artigos*/
+section.container-blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 4px;
+    padding-bottom: 80px;
+    box-shadow: 0px 5px 2px lightseagreen;
+}
+section.container-blog > .conteudo-blog{
+    width: 330px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+section.container-blog > .conteudo-blog > img{
+    object-fit: cover;
+    border-radius: 5px;
+ }
+section.container-blog > .conteudo-blog > h1{
+   font-size: 1.9rem;
+   color: rgb(78, 78, 78);
+}
+section.container-blog > .conteudo-blog > h2{
+    font-size: .8rem;
+    color: rgb(48, 46, 46);
+ }
+ section.container-blog > .conteudo-blog > p{
+    width: 300px;
+    font-size: 1rem;
+    color: rgb(94, 94, 94);
+    text-align: justify;
+ }
+ section.container-blog > .conteudo-blog > button{
+    margin-top:5px;
+    width: 120px;
+    padding: 6px 10px;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(0, 191, 255);
+    color: white;
+    transition: .5s;
+ }
+ section.container-blog > .conteudo-blog > button:hover{
+    background-color: rgb(0, 89, 190);
+    color: rgb(255, 255, 255);
+ }
+/*section blog-artigos*/
+
+/*section footer*/
+section.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: grey;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+}
+section.container-footer > .footer-jobfinder{
+    width: 310px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+section.container-footer > .footer-jobfinder > h1 {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+section.container-footer > .footer-jobfinder > h2 {
+    color: rgb(226, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+section.container-footer > .footer-jobfinder > p {
+    color: rgba(187, 187, 187, 0.979);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: .9rem;
 }
 
-.conteudo-footer-02 > h1{
-    color: #d30617dc;
-    font-family: var(--font01);
+section.container-footer > #footer03 {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+}
+section.container-footer > #footer03 > ul > a {
     margin-bottom: 10px;
-}
-
-.conteudo-footer-02 > a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-family: var(--font02);
-    color: rgba(255, 255, 255, 0.452);
-    transition: 0.3s;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    transition: .4s;
+}
+section.container-footer > #footer03 > ul > a:hover {
+   color: rgb(4, 81, 247);
+}
+section.container-footer > #footer03 > ul > a.ul-footer-instagram{
+    margin-left: -4px;
+    transition: .5s;
+}
+section.container-footer > #footer03 > ul > a.ul-footer-instagram:hover{
+    color: blueviolet;
+}
+section.container-footer > #footer03 > ul > a.ul-footer-linkedin{
+    margin-left: 1px;
+}
+section.container-footer > #footer03 > ul > a.ul-footer-linkedin:hover{
+    color: lightskyblue;
+}
 
-}
-.conteudo-footer-02 > a:hover{
-    color: rgba(255, 255, 255, 0.925);
-}
+/*section footer*/
