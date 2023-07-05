@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) and (max-width: 1023px){
+
+    button#btn-menu , nav.nav-mobile {
+        display: none;
+    }
+
+    ul.ul-navbar li{
+        display: inline-block;
+        position: relative;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+}

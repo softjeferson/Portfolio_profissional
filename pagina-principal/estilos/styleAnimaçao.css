@@ -17,6 +17,6 @@
 @media screen and (max-width: 768px){
     header > nav.nav-mobile.abrir{
         display: block;
-        height: auto;
+        height: 100%;
     }
 }
