@@ -2,224 +2,131 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobFinder</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media_query_mobile.css">
+    <title>PIBESC</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/styleAnimaçao.css">
+    <link rel="stylesheet" href="estilos/styleWebprincipal.css">
+    <link rel="stylesheet" href="estilos/styleMobile.css">
 </head>
 <body>
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo-01.png"></a>
-                </div>
-                <div class="navegacao">
-                    <nav>
-                        <a href="#">Encontra</a>
-                        <a href="#">Enviar vaga</a>
-                        <a href="#">Contato</a>
-                    </nav>
-                </div>
+    <header>
 
-                <button onclick="clica()" id="btn-menu">
-                    <span class="linha1"></span>
-                    <span class="linha2"></span>
-                    <span class="linha3"></span>
-                </button>
+        <i class="logo-navbar">
 
-                <div class="navegacao-mobile" id="navegacao-mobile">
-                    <nav>
-                        <a href="#">Encontra</a>
-                        <a href="#">Enviar vaga</a>
-                        <a href="#">Contato</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <section class="container">
-            <div class="container-conteudo01">
-                <h1>A maneira mais fácil de encontrar seu novo emprego</h1>
-                <p>conect-se de forma gratuita as melhores emopresas e consiga o emprego dos seus sonhos.</p>
-            <div class="pesquisar-categoria">
-                <input type="search" name="cargo" class="box-pesquisar" id="cargoid" placeholder="Digite o cargo">
-                <input type="search" name="estados" class="box-pesquisar" id="estadosid" placeholder="Todos os estados">
-                <input type="search" name="categoria" class="box-pesquisar" id="categoriaid" placeholder="categoria">
-                <input type="button" id="btn-pesquisar" value="PESQUISAR">
-            </div>
-        </div>
-        </section>
+            <a href="#"><img src="icon/logo-navbar.png"></a>
 
-        <div class="vagas">
-            <h1>Últimas vagas enviadas</h1>
-        </div>
+        </i>
 
-        <section class="container-tabela">
-           <img width="100" src="img/png-google-logo-1280x720-1.png" >
-           <div class="tipo-vagas">
-                    <h1>Develope</h1>
-               <strong>
-                   <h2>Google</h2>
-               </strong>
-           </div>
-           <h3>Montain View, California</h3>
-           <h4>CLT</h4>
-        </section>
+        <nav class="navbar">
 
-        <section class="container-tabela2">
-            <img width="60" src="img/logo-ibm-2048.png">
-            <div class="tipo-vagas">
-                 <h1>DBA</h1>
-                 <strong>
-                     <h2>IBM</h2>
-                 </strong>   
-            </div>
-                 <h3>Armonk, New York</h3>
-                 <h4>PJ</h4>
-        </section>
+            <ul class="ul-navbar">
 
-        <section class="container-tabela4">
-            <img width="80" src="img/logo-linkedin-2048.png">
-            <div class="tipo-vagas">
-                 <h1>Full stack Develope</h1>
-                 <strong>
-                     <h2>Facebook</h2>
-                 </strong>   
-            </div>
-                 <h3>Armonk, New York</h3>
-                 <h4>PJ</h4>
-        </section>
-        
-        <section class="container-tabela3">
-           <img width="100" src="img/Facebook-Logo.png">
-           <div class="tipo-vagas">
-                <h1>Front End Developer</h1>
-                <strong>
-                    <h2>Linkedin</h2> 
-                </strong>  
-           </div>
-                <h3>sunnyvale,california</h3>
-                <h4>HOME OFFICE</h4>
-        </section>
-        
-          <div class="vagas-ver-mais">
-            <h1>VER MAIS VAGAS</h1>
-        </div>
+                <li><a href="#">A Igreja</a></li>
+                <li><a href="#">Cultos Online</a></li>
+                <li><a href="#">Acamp</a></li>
 
-        <section class="container-enviar-vaga">
-            <div class="conteudo-enviar-vaga">
-                <h1>Envie uma vaga que será vista por milhares de candidatos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At culpa minima, nihil, omnis ut sapiente repudiandae dicta aliquam explicabo accusantium doloribus incidunt, eum labore sunt laudantium earum odio hic similique!</p>
-            </div>
-            <div class="btn-enviar">
-                <h1>ENVIAR VAGA</h1>
-            </div>
-        </section>
+                <li>
 
-        <section class="jobfinder">
-            <h1>Estatíscas do JobFinder</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis fuga quia nam quae error at molestiae quod eveniet laudantium veniam nostrum et totam quaerat praesentium impedit, beatae animi perspiciatis commodi!</p>
-            <div class="jobfinder-container">
-                <div class="jobfinder01">
-                    <h1>150</h1>
-                    <p>Vagas abertas</p>
-                </div>
-                <div class="jobfinder01">
-                    <h1>250</h1>
-                    <p>Candidatos contratados</p>
-                </div>
-                <div class="jobfinder01">
-                    <h1>50</h1>
-                    <p>Empresas participantes</p>
-                </div>
-                <div class="jobfinder01">
-                    <h1>550</h1>
-                    <p>Candidatos</p>
-                </div>
-            </div>
-        </section>
+                    <a href="#">Grupos+</a>
 
-        <section class="container-candidatos">
-            <div class="candidatos-container">
-                <div class="conteudo-candidatos">
-                    <h1>Vejo o que os candidatos dizem</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, id? Nisi ex vero fugiat quam tempore voluptate nostrum architecto illum, magni quia quae tenetur ullam obcaecati minus quis praesentium totam.</p>
-                </div>
-            </div>
-            <div class="container-comentarios">
-                <div class="cometarios-candidatos">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt architecto animi eum deserunt id cumque molestias nihil possimus velit quaerat? Voluptas dolore minima ipsam sunt soluta molestias, tenetur labore fuga.</p>
-                </div>
-                <div class="cometarios-candidatos">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt architecto animi eum deserunt id cumque molestias nihil possimus velit quaerat? Voluptas dolore minima ipsam sunt soluta molestias, tenetur labore fuga.</p>
-                </div>
-                <div class="cometarios-candidatos">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt architecto animi eum deserunt id cumque molestias nihil possimus velit quaerat? Voluptas dolore minima ipsam sunt soluta molestias, tenetur labore fuga.</p>
-                </div>
-                <div class="cometarios-candidatos">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt architecto animi eum deserunt id cumque molestias nihil possimus velit quaerat? Voluptas dolore minima ipsam sunt soluta molestias, tenetur labore fuga.</p>
-                </div>       
-            </div>
-        </section>
+                    <ul class="dropdown" id="dropdown-estilos">
 
-        <div class="divisao-blog">
-            <h1>Últimas artigos do nosso blog</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, blanditiis! Ipsum ea nobis rerum, facere consectetur dolorem vero quaerat voluptas, veniam debitis maxime.</p>
-        </div>
+                        <h1>Departamento</h1>
 
-        <section class="container-blog">
-            <div class="conteudo-blog">
-                <img src="img/blog-01.jpg">
-                <h1>Article title</h1>
-                <h2>05 de fevereiro de 2019 | 10 comentários</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur magnam mollitia natus architecto nostrum sed deleniti quisquam! </p>
-                <button>
-                   LER POST
-                </button>
-            </div>
-            <div class="conteudo-blog">
-                <img src="img/blog-02.jpg">
-                <h1>Article title</h1>
-                <h2>05 de fevereiro de 2019 | 10 comentários</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur magnam mollitia natus architecto nostrum sed deleniti quisquam! </p>
-                <button>
-                   LER POST
-                </button>
-            </div>
-            <div class="conteudo-blog">
-                <img src="img/blog-03.jpg">
-                <h1>Article title</h1>
-                <h2>05 de fevereiro de 2019 | 10 comentários</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur magnam mollitia natus architecto nostrum sed deleniti quisquam! </p>
-                <button>
-                   LER POST
-                </button>
-            </div>
-        </section>
+                        <li><a href="#">Ubaesc</a></li>
+                        <li><a href="#">Unijovem</a></li>
+                        <li><a href="#">Embaixadores do rei</a></li>
+                        <li><a href="#">MCM</a></li>
 
-        <section class="container-footer">
-            <div class="footer-jobfinder" id="footer01">
-                <img width="110" src="img/logo-01.png">
-                <h1>JobFinder</h1>
-                <p>A maneira mais fácil de encontrar seu proximo emprego</p>
+                    </ul>
+                </li>
+
+                <li><a href="#">contato</a></li>
+                <li><a href="#">redes sociais</a></li>
+
+            </ul>
+
+        </nav>
+
+        <button onclick="clicar()" id="btn-menu">
+
+            <span class="linha1" ></span>
+            <span class="linha2" ></span>
+            <span class="linha3" ></span>
+
+        </button>
+
+        <nav class="nav-mobile" id="menu-mobile">
+
+            <ul class="ul-navbar-mobile">
+
+                <img src="icon/logo-navbar.png">
+
+                <h1>Primeira Igreja Batista</h1>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        real_estate_agent
+                        </span>
+                    <a href="#">A Igreja</a>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        live_tv
+                        </span>
+                    <a href="#">Cultos Online</a>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        home_app_logo
+                        </span>
+                    <a href="#">Acamp</a>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        groups_3
+                        </span>
+                    <a href="#">Ubaesc</a>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        supervisor_account
+                        </span>
+                    <a href="#">Unijovem</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        diversity_3
+                        </span>
+                    <a href="#">Embaixadores do rei</a>
+                </li>
+
+                <li>
+                    <span class="material-symbols-outlined">
+                        woman
+                        </span>
+                    <a href="#">MCM</a>
+                </li>
+                
+            </ul>
+
+            <div class="redesociais">
+
+                <i></i>
+                <i></i>
+                <i></i>
+
             </div>
-            <div class="footer-jobfinder" id="footer02">
-                <h1>Artigos rescentes</h1>
-                <h2>Como conseguir o primeiro emprego em tempos de crise</h2>
-                <p>05 de fevereiro de 2019</p>
-                <h2>Como conseguir o primeiro emprego em tempos de crise</h2>
-                <p>05 de fevereiro de 2019</p>
-                <h2>Como conseguir o primeiro emprego em tempos de crise</h2>
-                <p>05 de fevereiro de 2019</p>
-            </div>
-            <div class="footer-jobfinder" id="footer03">
-                <h1>Nos encontre nas redes sociais</h1>
-                <ul>
-                    <a href="#"> <img width="30" src="img/footer-facebook.png"> Facebook</a>
-                    <a href="#" class="ul-footer-instagram"> <img width="35" src="img/footer-instagram.png"> Instagram</a>
-                    <a href="#" class="ul-footer-linkedin"> <img width="26" src="img/footer-linkedin.png"> Linkedin</a>
-                </ul>
-            </div>
-        </section>
+
+        </nav>
+
+    </header>
+
+    <script src="sistema js/interatividade.js"></script>
 </body>
 </html>

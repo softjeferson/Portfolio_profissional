@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
+
+
+:root{
+
+    --corbranca:white;
+    --corpreta: black;
+    --corletrasdouradas:goldenrod;
+    --cor04:    darkslategrey;
+    --cor05:    #771919;
+
+    --fontNavbar: 'Cinzel', serif;
+    --fontAncorasNav: 'M PLUS 1p', sans-serif;
+    --font02:s;
+    --font03:s;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width:1020px) {
+    button#btn-menu ,nav.nav-mobile{
+        display: none;
+    }
+}
+
+header {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corbranca);
+}
+
+i.logo-navbar{
+    background-color:var(--corpreta);
+    padding: 0px 120px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+i.logo-navbar > a > img{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+/*nav-bar + estilos + dropdown*/
+
+nav.navbar > ul.ul-navbar{
+    list-style: none;
+    margin-right: 30px;
+}
+
+ul.ul-navbar li{
+    display: inline-block;
+    position: relative;
+}
+
+ul.ul-navbar li a{
+    display: block;
+    padding: 5px 15px;
+    color: var(--cor04);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--fontNavbar);
+    font-weight: bold;
+    border-radius: 19px;
+    transition: 1s ease;
+}
+
+ul.ul-navbar li a:hover{
+    color: var(--cor04);
+    border: 1px solid var(--cor05);
+    border-radius: 20px;
+}
+
+ul.ul-navbar li ul.dropdown li{
+    display: block;
+}
+ul.ul-navbar li ul.dropdown{
+    width: 220%;
+    background-color: rgb(255, 253, 253);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 10px;
+    border: 2px solid rgba(134, 133, 133, 0.61);
+}
+ul.ul-navbar li ul.dropdown a:hover{
+    background-color: #4130302a;
+    border: 1px solid var(--cor05);
+}
+
+ul.ul-navbar li ul#dropdown-estilos > h1 {
+    text-align: center;
+    font-family: var(--fontAncorasNav);
+    color: var(--corpreta);
+    padding: 20px;
+}
+ul.ul-navbar li ul#dropdown-estilos > li > a {
+    border-radius: 10px;
+}
+
+ul.ul-navbar li:hover ul.dropdown{
+    display: block;
+}
+/*nav-bar + estilos + dropdown... final. */
+

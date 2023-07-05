@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#btn-menu.ativar .linha1{
+    transform: translateY(15px) rotate(-54deg);
+    background-color: red;
+}
+
+#btn-menu.ativar .linha2{
+    width: 0%;
+}
+
+#btn-menu.ativar .linha3{
+    transform: translateY(-11px) rotate(49deg);
+    background-color: red;
+}
+
+@media screen and (max-width: 768px){
+    header > nav.nav-mobile.abrir{
+        display: block;
+        height: auto;
+    }
+}
