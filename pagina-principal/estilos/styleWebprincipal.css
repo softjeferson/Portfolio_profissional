@@ -118,3 +118,141 @@ ul.ul-navbar li:hover ul.dropdown{
 }
 /*nav-bar + estilos + dropdown... final. */
 
+/*carrosel-main*/
+main > div.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 552px;
+    overflow: hidden;
+}
+
+main > div.slider > div.slides{
+    width: 100%;
+    height: 480px;
+}
+
+div.slides input{
+    display: none;
+}
+
+div.slider > div.slides > div.slide{
+    width: 100%;
+    position: relative;     
+}
+
+div.slide-first > img {
+    width: 100%;
+    object-fit: cover;
+}
+div.slide > img {
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+}
+
+/*correção das imagens bugs */
+div.slides > div.slide-first > img.imagem{
+    width: 100%;
+    height: 600px;
+}
+div.slides > div.slide-first > img.img-container{
+    object-fit: cover;
+    filter: blur(3px);
+}
+div.slides > div.slide > img.img-container{
+    object-fit: cover;
+    object-position: center top;
+}
+/*Fim correção das imagens bugs */
+
+div.manual-navegation{
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+label.manual-btn{
+    border: 4px solid rgb(80, 64, 64);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 1s;
+}
+
+label.manual-btn:hover{
+    background-color: goldenrod;
+}
+
+/*importante (Não mecher) manipulado usando css para as caixas*/
+
+#radio1:checked ~ .slide-first{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .slide-first{
+    display: none;
+}
+
+/*Fim importante (Não mecher) manipulado usando css para as caixas*/
+
+/*caixa-container dos slides*/
+main > div.slider > div.slides > div.slide-first > div.container-item-slide{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    margin-top: 25%;
+    margin-left: 5%;
+    z-index: 3;
+}
+
+div.container-item-slide > h1{
+    position: absolute;
+    padding: 10px;
+    transform: translateX(-4%) translateY(-100%);
+    font-family: var(--fontNavbar);
+    font-size: 4.3rem;
+    color: #ffe81aef;
+    text-shadow: 6px 3px 0px #3b3b3bbb;
+}
+
+div.container-item-slide > a{
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 8px 30px;
+    text-decoration: none;
+    font-family: var(--fontNavbar);
+    font-weight: bold;
+    color: var(--corletrasdouradas);
+    border: 2.5px solid rgba(255, 255, 255, 0.466);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.514);
+    transition: 1s ease;
+}
+
+div.container-item-slide > a:hover{
+    box-shadow: 5px 10px 1px rgba(255, 255, 255, 0.527);
+}
+
+div.container-item-slide > strong > a{
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: rgba(236, 236, 28, 0.938);
+    font-family: var(--fontNavbar);
+    color: rgb(231, 228, 228);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.993);
+    transition: 1s ease;
+}
+
+div.container-item-slide > strong > a:hover{
+    box-shadow: 5px 10px 1px rgba(255, 255, 255, 0.548);
+    color: rgb(235, 238, 196);
+}
+/*fim caixa-container dos slides*/
+
+
