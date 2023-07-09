@@ -204,12 +204,12 @@ main > div.slider > div.slides > div.slide-first > div.container-item-slide{
     position: absolute;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
     gap: 20px;
     margin-top: 25%;
-    margin-left: 5%;
     z-index: 3;
 }
 
@@ -219,7 +219,7 @@ div.container-item-slide > h1{
     transform: translateX(-4%) translateY(-100%);
     font-family: var(--fontNavbar);
     font-size: 4.3rem;
-    color: #ffe81aef;
+    color: #fafaf9ef;
     text-shadow: 6px 3px 0px #3b3b3bbb;
 }
 
@@ -245,14 +245,19 @@ div.container-item-slide > strong > a{
     background-color: rgba(236, 236, 28, 0.938);
     font-family: var(--fontNavbar);
     color: rgb(231, 228, 228);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.993);
+    text-shadow: 1px 1px 3px #000000fd;
     transition: 1s ease;
 }
 
 div.container-item-slide > strong > a:hover{
-    box-shadow: 5px 10px 1px rgba(255, 255, 255, 0.548);
+    box-shadow: 5px 10px 1px #ffffff8c;
     color: rgb(235, 238, 196);
 }
 /*fim caixa-container dos slides*/
+
+/*estilo dos radios + navegation-auto*/
+#radio1:checked ~ div.navegation-auto div.auto-btn1{
+    background-color: gold !important;
+}
 
 

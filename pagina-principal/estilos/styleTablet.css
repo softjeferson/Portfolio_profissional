@@ -1,7 +1,21 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 769px) and (max-width: 1023px){
+/*mini-tablet*/
+@media screen and (min-width: 768px) and (max-width:1024px){
+    /*caixa-container dos slides*/
+    main > div.slider > div.slides > div.slide-first > div.container-item-slide{
+        width: 100%;
+        margin-top: 40%;
+        gap: 30px;
+    }
 
+}
+
+
+/*media oficial tablet*/
+@media screen and (min-width: 820px) and (max-width: 1280px){
+
+    /*buttom + navbar(ajuste-tablet)*/
     button#btn-menu , nav.nav-mobile {
         display: none;
     }
@@ -12,5 +26,9 @@
         align-items: center;
         margin-left: 20px;
     }
+     /*Fim buttom + navbar(ajuste-tablet)*/
+
+    /*caixa-container dos slides*/
+
 
 }
